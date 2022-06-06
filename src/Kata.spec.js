@@ -5,5 +5,9 @@ describe("KATA", () => {
       const respuesta = verificarCadena(""); 
       expect(respuesta).toEqual("");
     });
+    it("Deberia verficar si el primer parentesis es el correcto", () => {
+        const respuesta = verificarCadena("["); 
+        expect(respuesta).toEqual("OK");
+      });
 });
 
