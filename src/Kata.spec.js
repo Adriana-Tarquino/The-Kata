@@ -1,3 +1,5 @@
+import verificarCadena from "./cadena"
+
 describe("KATA", () => {
     it("deberia verficar si la cadena esta vacia", () => {
       const respuesta = verificarCadena(""); 
@@ -5,6 +7,3 @@ describe("KATA", () => {
     });
 });
 
-function verificarCadena(cadena) {
-    return cadena;
-}
