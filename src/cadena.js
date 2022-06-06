@@ -1,7 +1,13 @@
 function verificarCadena(cadena) {
-    if(cadena.at(0) === '['){
-        return "OK";
+    var respuesta = cadena;
+   for(var i=0; i<cadena.length; i++) {
+    if(cadena[i] == '[' && cadena[i+1] == ']'){
+        respuesta = "OK";
     }
-    return cadena;
+    if(cadena[i] == '['){
+        respuesta = "OK";
+    }
+   }
+   return respuesta;
 }
 export default verificarCadena;
